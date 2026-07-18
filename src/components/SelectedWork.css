@@ -95,7 +95,8 @@
 
 .project-card__preview-inner {
   position: relative;
-  min-height: clamp(20rem, 42vw, 34rem);
+  min-height: 0;
+  aspect-ratio: 2 / 1;
   overflow: hidden;
   background: var(--surface-elevated);
 }
@@ -392,7 +393,7 @@
 
 @media (max-width: 720px) {
   .project-card__preview-inner {
-    min-height: 15rem;
+    min-height: 0;
   }
 
   .project-card__detail {

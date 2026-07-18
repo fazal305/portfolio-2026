@@ -1,9 +1,8 @@
-const screenshotPlaceholder = (filename) => ({
-  src: null,
-  alt: null,
+const screenshot = (filename, alt) => ({
+  src: `projects/${filename}`,
+  alt,
   filename,
-  recommendedSize: "1600×1000",
-  isPlaceholder: true,
+  isPlaceholder: false,
 });
 
 export const projects = [
@@ -30,7 +29,10 @@ export const projects = [
     liveUrl: "https://fazal305.github.io/fazal-labs/",
     caseStudyUrl: null,
     caseStudyPending: true,
-    screenshot: screenshotPlaceholder("fazal-labs-preview.png"),
+    screenshot: screenshot(
+      "fazal-labs-preview.png",
+      "Fazal Labs ecosystem dashboard showing its navigation, introduction, and portfolio statistics",
+    ),
   },
   {
     id: "database-engineering-studio",
@@ -58,8 +60,9 @@ export const projects = [
     liveUrl: "https://fazal305.github.io/database-engineering-studio/",
     caseStudyUrl: null,
     caseStudyPending: true,
-    screenshot: screenshotPlaceholder(
+    screenshot: screenshot(
       "database-engineering-studio-preview.png",
+      "Database Engineering Studio dashboard showing its schema, SQL, visualization, query building, and normalization modules",
     ),
   },
   {
@@ -85,7 +88,10 @@ export const projects = [
     liveUrl: "https://fazal305.github.io/nightcity-os/",
     caseStudyUrl: null,
     caseStudyPending: true,
-    screenshot: screenshotPlaceholder("nightcity-os-preview.png"),
+    screenshot: screenshot(
+      "nightcity-os-preview.png",
+      "NIGHTCITY OS browser desktop with application icons, notification panel, and taskbar",
+    ),
   },
   {
     id: "civicconnect",
@@ -114,7 +120,10 @@ export const projects = [
     liveUrl: "https://fazal305.github.io/civic-issue-resolution/",
     caseStudyUrl: null,
     caseStudyPending: true,
-    screenshot: screenshotPlaceholder("civicconnect-preview.png"),
+    screenshot: screenshot(
+      "civicconnect-preview.png",
+      "CivicConnect landing page presenting multilingual civic issue reporting for Pakistan",
+    ),
   },
   {
     id: "devkit-studio",
@@ -144,7 +153,10 @@ export const projects = [
     liveUrl: "https://fazal305.github.io/devkit-studio/",
     caseStudyUrl: null,
     caseStudyPending: true,
-    screenshot: screenshotPlaceholder("devkit-studio-preview.png"),
+    screenshot: screenshot(
+      "devkit-studio-preview.png",
+      "DevKit Studio developer workspace showing its API, JSON, XML, RSS, and schema modules",
+    ),
   },
   {
     id: "fazal-framework",
@@ -169,7 +181,10 @@ export const projects = [
     liveUrl: "https://fazal305.github.io/fazal-framework/",
     caseStudyUrl: null,
     caseStudyPending: true,
-    screenshot: screenshotPlaceholder("fazal-framework-preview.png"),
+    screenshot: screenshot(
+      "fazal-framework-preview.png",
+      "Fazal Framework dashboard showing live framework module status and activity history",
+    ),
   },
 ];
 

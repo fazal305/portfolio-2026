@@ -14,9 +14,10 @@ function ProjectScreenshot({ project }) {
   return (
     <img
       className="project-card__image"
-      src={project.screenshot.src}
+      src={`${import.meta.env.BASE_URL}${project.screenshot.src}`}
       alt={project.screenshot.alt}
       loading="lazy"
+      decoding="async"
     />
   );
 }
