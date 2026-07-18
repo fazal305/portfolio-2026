@@ -8,8 +8,8 @@ const headers = {
   "X-GitHub-Api-Version": "2022-11-28",
 };
 
-if (process.env.GITHUB_TOKEN) {
-  headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
+if (process.env.GIST_TOKEN) {
+  headers.Authorization = `Bearer ${process.env.GIST_TOKEN}`;
 }
 
 const existingSource = await readFile(outputUrl, "utf8");
@@ -18,7 +18,10 @@ const existingById = new Map(existingModule.gists.map((gist) => [gist.id, gist])
 
 const response = await fetch(`https://api.github.com/users/${username}/gists?per_page=100`, { headers });
 if (!response.ok) {
-  throw new Error(`GitHub Gist sync failed: ${response.status} ${response.statusText}`);
+  console.warn(
+    `Gist sync skipped: GitHub returned ${response.status} ${response.statusText}. Using checked-in Gist data.`,
+  );
+  process.exit(0);
 }
 
 const publicGists = await response.json();

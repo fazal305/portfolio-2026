@@ -30,7 +30,7 @@ jobs:
       - name: Sync public Gists
         run: npm run sync:gists
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
       - name: Lint
         run: npm run lint
       - name: Build

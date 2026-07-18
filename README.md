@@ -44,6 +44,8 @@ npm run sync:gists
 
 The deployment workflow refreshes public Gists through GitHub before every build. Existing editorial titles, summaries, tags, and featured selections are retained. New public Gists are added automatically using their GitHub metadata.
 
+Public Gist synchronization works without authentication. An optional `GIST_TOKEN` Actions secret can be added for a higher API rate limit. If GitHub is temporarily unavailable, deployment continues using the verified checked-in Gist data.
+
 Project entries remain curated. GitHub can supply repository descriptions, languages, and homepage links automatically, but recruiter-facing selection and real screenshots still require editorial review. Add new projects to `archiveProjects.js` after checking their presentation and links.
 
 ## Verified real content
