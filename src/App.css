@@ -1,0 +1,20 @@
+.reveal-target {
+  opacity: 0;
+  transform: translateY(22px) scale(0.992);
+  transition:
+    opacity 560ms ease var(--reveal-delay, 0ms),
+    transform 560ms ease var(--reveal-delay, 0ms);
+}
+
+.reveal-target.is-revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-target,
+  .reveal-target.is-revealed {
+    opacity: 1;
+    transform: none;
+  }
+}
