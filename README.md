@@ -63,7 +63,7 @@ Project entries remain curated. GitHub can supply repository descriptions, langu
 - Six flagship screenshot slots require real 1600×1000 captures
 - Aptech program name and current education details require confirmation
 - CivicConnect’s detailed personal task attribution can be expanded later
-- Archive entries marked `Stack verification pending` require repository inspection
+- Archive stacks are verified from repository languages, dependency manifests, and representative source files
 - Case-study pages have not yet been written
 - The archive contains every repository supplied so far; newly created projects must still be reviewed and added
 

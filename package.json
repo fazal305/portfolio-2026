@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "sync:gists": "node scripts/sync-gists.mjs",
+    "verify:stacks": "node scripts/sync-project-stacks.mjs",
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview"

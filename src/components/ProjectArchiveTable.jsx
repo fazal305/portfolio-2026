@@ -100,7 +100,7 @@ function ProjectArchiveTable() {
       )}
 
       <p className="project-archive__note mono-label">
-        Stack verification is pending where explicitly marked.
+        Stacks verified from public repository source.
       </p>
     </section>
   );

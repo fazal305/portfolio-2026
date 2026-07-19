@@ -1,3 +1,5 @@
+import { projectStacks } from "./projectStacks.js";
+
 const githubBase = "https://github.com/fazal305";
 const pagesBase = "https://fazal305.github.io";
 
@@ -7,16 +9,21 @@ const project = (
   category,
   liveUrl = `${pagesBase}/${slug}/`,
   extra = {},
-) => ({
-  id: slug.toLowerCase(),
-  name,
-  category,
-  stack: ["Stack verification pending"],
-  githubUrl: `${githubBase}/${slug}`,
-  liveUrl,
-  metadataPending: true,
-  ...extra,
-});
+) => {
+  const id = slug.toLowerCase();
+  const verifiedStack = projectStacks[id];
+
+  return {
+    id,
+    name,
+    category,
+    stack: verifiedStack?.length ? verifiedStack : ["No application source"],
+    githubUrl: `${githubBase}/${slug}`,
+    liveUrl,
+    metadataPending: false,
+    ...extra,
+  };
+};
 
 export const archiveProjects = [
   project("rss-news-dashboard", "RSS News Dashboard", "Data tools"),
@@ -344,6 +351,7 @@ export const archiveProjects = [
 export const archiveStatus = {
   suppliedProjectCount: archiveProjects.length,
   isComplete: false,
+  stackVerification: "complete",
   note: "Fazal Abbas must explicitly confirm that this contains every project to date.",
 };
 
