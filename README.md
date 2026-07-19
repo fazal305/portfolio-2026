@@ -100,6 +100,7 @@ Confirm the latest registration format in the official is-a.dev documentation be
 - Keyboard-accessible navigation and visible focus states
 - Skip-to-content link
 - Reduced-motion support
+- Persistent light and dark themes with system-preference detection
 - Responsive mobile, tablet, and desktop layouts
 - Restrained IntersectionObserver reveals
 

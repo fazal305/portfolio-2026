@@ -8,6 +8,18 @@
     <meta property="og:title" content="Fazal Abbas — Frontend Engineer" />
     <meta property="og:description" content="Selected frontend engineering work, experience, and technical writing by Fazal Abbas." />
     <meta property="og:type" content="website" />
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("signal-portfolio-theme");
+        const theme = savedTheme === "light" || savedTheme === "dark"
+          ? savedTheme
+          : matchMedia("(prefers-color-scheme: light)").matches
+            ? "light"
+            : "dark";
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <title>Fazal Abbas — Frontend Engineer</title>
   </head>

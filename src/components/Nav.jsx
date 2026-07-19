@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import useStickyNav from "../hooks/useStickyNav";
+import useTheme from "../hooks/useTheme";
 
 const navigationItems = [
   { label: "Work", href: "#work" },
@@ -11,6 +12,7 @@ const navigationItems = [
 
 function Nav() {
   const isScrolled = useStickyNav();
+  const { theme, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
 
@@ -23,6 +25,7 @@ function Nav() {
   }, []);
 
   const closeMenu = () => setIsMenuOpen(false);
+  const nextTheme = theme === "dark" ? "light" : "dark";
 
   return (
     <header className={`site-nav${isScrolled ? " site-nav--scrolled" : ""}`}>
@@ -57,9 +60,7 @@ function Nav() {
           <ul>
             {navigationItems.map((item) => (
               <li key={item.href}>
-                <a href={item.href} onClick={closeMenu}>
-                  {item.label}
-                </a>
+                <a href={item.href} onClick={closeMenu}>{item.label}</a>
               </li>
             ))}
           </ul>
@@ -74,14 +75,32 @@ function Nav() {
           </a>
         </nav>
 
-        <a
-          className="button button--compact site-nav__resume"
-          href={resumeUrl}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Résumé <span aria-hidden="true">↗</span>
-        </a>
+        <div className="site-nav__actions">
+          <button
+            className="theme-toggle"
+            type="button"
+            aria-label={`Switch to ${nextTheme} theme`}
+            aria-pressed={theme === "light"}
+            title={`Switch to ${nextTheme} theme`}
+            onClick={toggleTheme}
+          >
+            <span className="theme-toggle__icon" aria-hidden="true">
+              {theme === "dark" ? "☼" : "☾"}
+            </span>
+            <span className="theme-toggle__label">
+              {theme === "dark" ? "Light" : "Dark"}
+            </span>
+          </button>
+
+          <a
+            className="button button--compact site-nav__resume"
+            href={resumeUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Résumé <span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </div>
     </header>
   );

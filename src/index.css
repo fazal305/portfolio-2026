@@ -47,6 +47,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root[data-theme="light"] {
+  --background: #f5f8fb;
+  --surface: #ffffff;
+  --surface-elevated: #eaf0f5;
+  --border: #cbd6e1;
+
+  --text-primary: #101820;
+  --text-secondary: #405064;
+  --text-muted: #667181;
+
+  --accent: #087f7b;
+  --accent-soft: rgba(8, 127, 123, 0.1);
+  --accent-line: rgba(8, 127, 123, 0.38);
+  --accent-secondary: #4169d8;
+
+  --grid-line: rgba(16, 24, 32, 0.055);
+  --nav-background: rgba(245, 248, 251, 0.9);
+  --placeholder-background: rgba(64, 80, 100, 0.045);
+  --shadow-elevated: 0 24px 70px rgba(16, 24, 32, 0.14);
+}
+
 *,
 *::before,
 *::after {
@@ -306,6 +327,7 @@ table {
 }
 
 .site-nav__inner {
+  position: relative;
   display: grid;
   min-height: 5rem;
   grid-template-columns: 1fr auto auto;
@@ -356,6 +378,48 @@ table {
 .site-nav__resume {
   color: var(--background);
   background: var(--accent);
+}
+
+.site-nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  min-height: 2.6rem;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-small);
+  color: var(--text-secondary);
+  background: var(--surface);
+  cursor: pointer;
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    background var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent-line);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.theme-toggle__icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.theme-toggle__label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 
 .hero {
@@ -618,7 +682,16 @@ table {
     display: none;
   }
 
+  .site-nav__actions {
+    grid-column: 2;
+    grid-row: 1;
+    margin-right: 3.35rem;
+  }
+
   .site-nav__menu-button {
+    position: absolute;
+    top: 50%;
+    right: 0;
     display: grid;
     width: 2.75rem;
     height: 2.75rem;
@@ -627,6 +700,7 @@ table {
     border: 1px solid var(--border);
     color: var(--text-primary);
     background: var(--surface);
+    transform: translateY(-50%);
   }
 
   .site-nav__menu-button span {
@@ -721,6 +795,14 @@ table {
 
   .hero__socials {
     gap: 1rem;
+  }
+
+  .theme-toggle__label {
+    display: none;
+  }
+
+  .theme-toggle {
+    padding-inline: 0.72rem;
   }
 }
 
