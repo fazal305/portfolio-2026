@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&display=swap");
 
 :root {
   --background: #07090d;
@@ -16,8 +16,8 @@
 
   --accent-secondary: #668cff;
 
-  --font-heading: "Space Grotesk", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --font-heading: "Bricolage Grotesque", sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
   --grid-line: rgba(255, 255, 255, 0.025);
