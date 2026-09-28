@@ -5,7 +5,9 @@ const storageKey = "signal-portfolio-theme";
 const getInitialTheme = () => {
   const savedTheme = window.localStorage.getItem(storageKey);
   if (savedTheme === "light" || savedTheme === "dark") return savedTheme;
-  return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  return window.matchMedia("(prefers-color-scheme: light)").matches
+    ? "light"
+    : "dark";
 };
 
 function useTheme() {

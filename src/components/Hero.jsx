@@ -158,7 +158,7 @@ function Hero() {
 
             <a
               className="button button--secondary"
-                href={resumeUrl}
+              href={resumeUrl}
               target="_blank"
               rel="noreferrer"
             >

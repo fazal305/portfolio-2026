@@ -7,38 +7,19 @@ export const projectStacks = {
     "CSS3",
     "HTML5",
     "LocalStorage",
-    "DOMParser"
+    "DOMParser",
   ],
-  "json-api-explorer": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "Fetch API"
-  ],
-  "dataforge": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "DOMParser"
-  ],
-  "sitemap-visualizer": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "DOMParser"
-  ],
-  "api-response-comparator": [
-    "JavaScript",
-    "CSS3",
-    "HTML5"
-  ],
+  "json-api-explorer": ["JavaScript", "CSS3", "HTML5", "Fetch API"],
+  dataforge: ["JavaScript", "CSS3", "HTML5", "DOMParser"],
+  "sitemap-visualizer": ["JavaScript", "CSS3", "HTML5", "DOMParser"],
+  "api-response-comparator": ["JavaScript", "CSS3", "HTML5"],
   "config-file-manager": [
     "JavaScript",
     "HTML5",
     "CSS3",
     "Bootstrap",
     "jQuery",
-    "DOMParser"
+    "DOMParser",
   ],
   "product-data-importer": [
     "JavaScript",
@@ -46,7 +27,7 @@ export const projectStacks = {
     "CSS3",
     "Bootstrap",
     "jQuery",
-    "DOMParser"
+    "DOMParser",
   ],
   "specforge-api-explorer": [
     "JavaScript",
@@ -54,7 +35,7 @@ export const projectStacks = {
     "CSS3",
     "Bootstrap",
     "jQuery",
-    "Fetch API"
+    "Fetch API",
   ],
   "postman-lite": [
     "JavaScript",
@@ -63,15 +44,9 @@ export const projectStacks = {
     "Bootstrap",
     "jQuery",
     "LocalStorage",
-    "Fetch API"
+    "Fetch API",
   ],
-  "json-schema-builder": [
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "Bootstrap",
-    "jQuery"
-  ],
+  "json-schema-builder": ["JavaScript", "HTML5", "CSS3", "Bootstrap", "jQuery"],
   "data-mapper": [
     "JavaScript",
     "HTML5",
@@ -80,7 +55,7 @@ export const projectStacks = {
     "jQuery",
     "SVG",
     "LocalStorage",
-    "DOMParser"
+    "DOMParser",
   ],
   "devkit-studio": [
     "HTML5",
@@ -90,7 +65,7 @@ export const projectStacks = {
     "jQuery",
     "LocalStorage",
     "Fetch API",
-    "DOMParser"
+    "DOMParser",
   ],
   "jira-lite-sprint-manager": [
     "JavaScript",
@@ -98,7 +73,7 @@ export const projectStacks = {
     "CSS3",
     "Bootstrap",
     "jQuery",
-    "Chart.js"
+    "Chart.js",
   ],
   "cms-admin-panel": [
     "JavaScript",
@@ -107,7 +82,7 @@ export const projectStacks = {
     "Bootstrap",
     "jQuery",
     "Chart.js",
-    "Canvas API"
+    "Canvas API",
   ],
   "crm-dashboard": [
     "JavaScript",
@@ -117,7 +92,7 @@ export const projectStacks = {
     "jQuery",
     "Chart.js",
     "Canvas API",
-    "LocalStorage"
+    "LocalStorage",
   ],
   "hr-management-portal": [
     "HTML5",
@@ -125,7 +100,7 @@ export const projectStacks = {
     "Bootstrap",
     "jQuery",
     "Chart.js",
-    "Canvas API"
+    "Canvas API",
   ],
   "school-management-dashboard": [
     "JavaScript",
@@ -135,7 +110,7 @@ export const projectStacks = {
     "jQuery",
     "Chart.js",
     "Canvas API",
-    "LocalStorage"
+    "LocalStorage",
   ],
   "browser-devtools-clone": [
     "JavaScript",
@@ -144,7 +119,7 @@ export const projectStacks = {
     "Bootstrap",
     "jQuery",
     "Chart.js",
-    "LocalStorage"
+    "LocalStorage",
   ],
   "browser-memory-visualizer": [
     "JavaScript",
@@ -154,7 +129,7 @@ export const projectStacks = {
     "jQuery",
     "Chart.js",
     "Canvas API",
-    "LocalStorage"
+    "LocalStorage",
   ],
   "flexbox-grid-builder": [
     "JavaScript",
@@ -162,7 +137,7 @@ export const projectStacks = {
     "CSS3",
     "Bootstrap",
     "jQuery",
-    "LocalStorage"
+    "LocalStorage",
   ],
   "rest-flow-designer": [
     "JavaScript",
@@ -171,7 +146,7 @@ export const projectStacks = {
     "Bootstrap",
     "jQuery",
     "LocalStorage",
-    "Fetch API"
+    "Fetch API",
   ],
   "json-database-studio": [
     "JavaScript",
@@ -179,7 +154,7 @@ export const projectStacks = {
     "CSS3",
     "Bootstrap",
     "jQuery",
-    "LocalStorage"
+    "LocalStorage",
   ],
   "figma-lite": [
     "JavaScript",
@@ -188,7 +163,7 @@ export const projectStacks = {
     "Bootstrap",
     "jQuery",
     "SVG",
-    "LocalStorage"
+    "LocalStorage",
   ],
   "fazal-labs": [
     "JavaScript",
@@ -196,149 +171,46 @@ export const projectStacks = {
     "CSS3",
     "Bootstrap",
     "jQuery",
-    "LocalStorage"
+    "LocalStorage",
   ],
-  "vbnet-algorithms-and-data-structures": [
-    "VB.NET"
-  ],
-  "cpsim-web-and-office-automation": [
-    "HTML5",
-    "CSS3",
-    "JavaScript"
-  ],
-  "fazalabbas305": [],
-  "should-i-do-it": [
-    "CSS3",
-    "JavaScript",
-    "HTML5"
-  ],
-  "roast-me-generator": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "Firebase"
-  ],
-  "reaction-speed-tester": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "LocalStorage"
-  ],
-  "fake-hacker-terminal": [
-    "JavaScript",
-    "CSS3",
-    "HTML5"
-  ],
-  "zombie-survival-choice-game": [
-    "JavaScript",
-    "CSS3",
-    "HTML5"
-  ],
-  "boss-fight-button-masher": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "LocalStorage"
-  ],
+  "vbnet-algorithms-and-data-structures": ["VB.NET"],
+  "cpsim-web-and-office-automation": ["HTML5", "CSS3", "JavaScript"],
+  fazalabbas305: [],
+  "should-i-do-it": ["CSS3", "JavaScript", "HTML5"],
+  "roast-me-generator": ["JavaScript", "CSS3", "HTML5", "Firebase"],
+  "reaction-speed-tester": ["JavaScript", "CSS3", "HTML5", "LocalStorage"],
+  "fake-hacker-terminal": ["JavaScript", "CSS3", "HTML5"],
+  "zombie-survival-choice-game": ["JavaScript", "CSS3", "HTML5"],
+  "boss-fight-button-masher": ["JavaScript", "CSS3", "HTML5", "LocalStorage"],
   "nightshift-fm-radio-dashboard": [
     "JavaScript",
     "CSS3",
     "HTML5",
-    "LocalStorage"
+    "LocalStorage",
   ],
-  "particle-reactor": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "Canvas API"
-  ],
-  "devboard": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "LocalStorage"
-  ],
-  "visual-algorithm-studio": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "Canvas API"
-  ],
+  "particle-reactor": ["JavaScript", "CSS3", "HTML5", "Canvas API"],
+  devboard: ["JavaScript", "CSS3", "HTML5", "LocalStorage"],
+  "visual-algorithm-studio": ["JavaScript", "CSS3", "HTML5", "Canvas API"],
   "karachi-transit-tracker": [
     "JavaScript",
     "CSS3",
     "HTML5",
     "Leaflet",
     "OpenStreetMap",
-    "Fetch API"
+    "Fetch API",
   ],
-  "markdown-knowledge-base": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "LocalStorage"
-  ],
-  "firebase-habit-tracker": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "Firebase"
-  ],
-  "visual-query-builder": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "Canvas API"
-  ],
-  "portfolio-website": [
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "Firebase"
-  ],
-  "firebase-project-suite": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "Firebase"
-  ],
-  "decodelabs-static-agency": [
-    "HTML5",
-    "CSS3"
-  ],
-  "nightcity-os": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "Canvas API"
-  ],
-  "retro-arcade-dashboard": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "LocalStorage"
-  ],
-  "physics-playground": [
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "Canvas API"
-  ],
-  "hexsoftwares_personal_portfolio": [
-    "HTML5",
-    "CSS3"
-  ],
-  "codealpha_musicplayer": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "LocalStorage"
-  ],
-  "codealpha_imagegallery": [
-    "JavaScript",
-    "CSS3",
-    "HTML5"
-  ],
+  "markdown-knowledge-base": ["JavaScript", "CSS3", "HTML5", "LocalStorage"],
+  "firebase-habit-tracker": ["JavaScript", "CSS3", "HTML5", "Firebase"],
+  "visual-query-builder": ["JavaScript", "CSS3", "HTML5", "Canvas API"],
+  "portfolio-website": ["HTML5", "CSS3", "JavaScript", "Firebase"],
+  "firebase-project-suite": ["JavaScript", "CSS3", "HTML5", "Firebase"],
+  "decodelabs-static-agency": ["HTML5", "CSS3"],
+  "nightcity-os": ["JavaScript", "CSS3", "HTML5", "Canvas API"],
+  "retro-arcade-dashboard": ["JavaScript", "CSS3", "HTML5", "LocalStorage"],
+  "physics-playground": ["JavaScript", "HTML5", "CSS3", "Canvas API"],
+  hexsoftwares_personal_portfolio: ["HTML5", "CSS3"],
+  codealpha_musicplayer: ["JavaScript", "CSS3", "HTML5", "LocalStorage"],
+  codealpha_imagegallery: ["JavaScript", "CSS3", "HTML5"],
   "nexsoft-chat-application-socketio": [
     "JavaScript",
     "CSS3",
@@ -346,44 +218,15 @@ export const projectStacks = {
     "Express",
     "Socket.IO",
     "Node.js",
-    "Firebase"
-  ],
-  "nexsoft-blog": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "LocalStorage",
-    "Fetch API"
-  ],
-  "decodelabs-responsive-web-layout": [
-    "HTML5",
-    "CSS3",
-    "JavaScript"
-  ],
-  "decodelabs-internship": [],
-  "hexsoftwares-todo-app": [
-    "CSS3",
-    "JavaScript",
-    "HTML5",
-    "LocalStorage"
-  ],
-  "hexsoftwares_resume_website": [
-    "HTML5",
     "Firebase",
-    "Leaflet",
-    "Fetch API"
   ],
-  "codealpha_calculator_app": [
-    "JavaScript",
-    "HTML5",
-    "CSS3"
-  ],
-  "codealpha_portfolio_website": [
-    "CSS3",
-    "HTML5",
-    "JavaScript",
-    "Bootstrap"
-  ],
+  "nexsoft-blog": ["JavaScript", "CSS3", "HTML5", "LocalStorage", "Fetch API"],
+  "decodelabs-responsive-web-layout": ["HTML5", "CSS3", "JavaScript"],
+  "decodelabs-internship": [],
+  "hexsoftwares-todo-app": ["CSS3", "JavaScript", "HTML5", "LocalStorage"],
+  hexsoftwares_resume_website: ["HTML5", "Firebase", "Leaflet", "Fetch API"],
+  codealpha_calculator_app: ["JavaScript", "HTML5", "CSS3"],
+  codealpha_portfolio_website: ["CSS3", "HTML5", "JavaScript", "Bootstrap"],
   "nexsoft-portfolio": [
     "HTML5",
     "CSS3",
@@ -392,7 +235,7 @@ export const projectStacks = {
     "jQuery",
     "Firebase",
     "Leaflet",
-    "SVG"
+    "SVG",
   ],
   "nexsoft-landing-page": [
     "HTML5",
@@ -400,7 +243,7 @@ export const projectStacks = {
     "JavaScript",
     "Bootstrap",
     "jQuery",
-    "SVG"
+    "SVG",
   ],
   "nexsoft-todo-app": [
     "JavaScript",
@@ -408,34 +251,24 @@ export const projectStacks = {
     "CSS3",
     "Bootstrap",
     "jQuery",
-    "LocalStorage"
+    "LocalStorage",
   ],
-  "nexsoft-calculator-app": [
-    "JavaScript",
-    "HTML5",
-    "CSS3"
-  ],
+  "nexsoft-calculator-app": ["JavaScript", "HTML5", "CSS3"],
   "nexsoft-weather-app": [
     "JavaScript",
     "CSS3",
     "HTML5",
     "LocalStorage",
-    "Fetch API"
+    "Fetch API",
   ],
-  "nexsoft-notes-app": [
-    "JavaScript",
-    "CSS3",
-    "HTML5",
-    "Bootstrap",
-    "jQuery"
-  ],
+  "nexsoft-notes-app": ["JavaScript", "CSS3", "HTML5", "Bootstrap", "jQuery"],
   "nexsoft-movie-search": [
     "JavaScript",
     "CSS3",
     "HTML5",
     "Bootstrap",
     "jQuery",
-    "Fetch API"
+    "Fetch API",
   ],
   "nexsoft-admin-dashboard": [
     "JavaScript",
@@ -443,7 +276,7 @@ export const projectStacks = {
     "HTML5",
     "Chart.js",
     "Canvas API",
-    "LocalStorage"
+    "LocalStorage",
   ],
   "nexsoft-expense-tracker": [
     "JavaScript",
@@ -451,7 +284,7 @@ export const projectStacks = {
     "HTML5",
     "Express",
     "Node.js",
-    "Fetch API"
+    "Fetch API",
   ],
   "nexsoft-ecommerce": [
     "HTML5",
@@ -459,63 +292,46 @@ export const projectStacks = {
     "CSS3",
     "Bootstrap",
     "jQuery",
-    "LocalStorage"
+    "LocalStorage",
   ],
   "nexsoft-task-manager": [
     "JavaScript",
     "HTML5",
     "CSS3",
     "Bootstrap",
-    "jQuery"
+    "jQuery",
   ],
   "decodelabs-interactive-web-elements": [
     "HTML5",
     "JavaScript",
     "CSS3",
-    "LocalStorage"
+    "LocalStorage",
   ],
   "rainwater-harvesting-eproject": [
     "HTML5",
     "CSS3",
     "JavaScript",
-    "Geolocation API"
+    "Geolocation API",
   ],
-  "hexsoftwares_webmusicplayer": [
+  hexsoftwares_webmusicplayer: [
     "JavaScript",
     "HTML5",
     "CSS3",
     "Bootstrap",
     "jQuery",
-    "LocalStorage"
+    "LocalStorage",
   ],
-  "hexsoftwares_animalcharitywebsite": [
-    "HTML5",
-    "CSS3",
-    "JavaScript"
-  ],
-  "hexsoftwares_gymwebsite": [
-    "HTML5",
-    "CSS3",
-    "JavaScript"
-  ],
-  "hexsoftwares_crowdfundingplatform": [
+  hexsoftwares_animalcharitywebsite: ["HTML5", "CSS3", "JavaScript"],
+  hexsoftwares_gymwebsite: ["HTML5", "CSS3", "JavaScript"],
+  hexsoftwares_crowdfundingplatform: [
     "HTML5",
     "JavaScript",
     "Bootstrap",
     "jQuery",
-    "Fetch API"
+    "Fetch API",
   ],
-  "hexsoftwares_booklibrary": [
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "LocalStorage"
-  ],
-  "hexsoftwares_animatingwebsite": [
-    "CSS3",
-    "HTML5",
-    "JavaScript"
-  ],
+  hexsoftwares_booklibrary: ["JavaScript", "HTML5", "CSS3", "LocalStorage"],
+  hexsoftwares_animatingwebsite: ["CSS3", "HTML5", "JavaScript"],
   "civic-issue-resolution": [
     "JavaScript",
     "HTML5",
@@ -523,7 +339,7 @@ export const projectStacks = {
     "Bootstrap",
     "jQuery",
     "Firebase",
-    "OpenStreetMap"
+    "OpenStreetMap",
   ],
   "structured-data-engineering-studio": [
     "JavaScript",
@@ -533,7 +349,7 @@ export const projectStacks = {
     "jQuery",
     "Chart.js",
     "LocalStorage",
-    "Fetch API"
+    "Fetch API",
   ],
   "database-engineering-studio": [
     "JavaScript",
@@ -541,28 +357,22 @@ export const projectStacks = {
     "HTML5",
     "Bootstrap",
     "jQuery",
-    "LocalStorage"
+    "LocalStorage",
   ],
-  "fazal-framework": [
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "Bootstrap",
-    "jQuery"
-  ],
+  "fazal-framework": ["JavaScript", "HTML5", "CSS3", "Bootstrap", "jQuery"],
   "fazal-notes": [
     "JavaScript",
     "HTML5",
     "CSS3",
     "Bootstrap",
     "jQuery",
-    "Chart.js"
+    "Chart.js",
   ],
   "react-fundamentals-starter-exercises": [
     "JavaScript",
     "CSS3",
     "HTML5",
-    "LocalStorage"
+    "LocalStorage",
   ],
   "database-javascript-engineering-studio": [
     "JavaScript",
@@ -570,8 +380,8 @@ export const projectStacks = {
     "CSS3",
     "Bootstrap",
     "jQuery",
-    "Chart.js"
-  ]
+    "Chart.js",
+  ],
 };
 
 export default projectStacks;

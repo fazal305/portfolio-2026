@@ -60,7 +60,9 @@ function Nav() {
           <ul>
             {navigationItems.map((item) => (
               <li key={item.href}>
-                <a href={item.href} onClick={closeMenu}>{item.label}</a>
+                <a href={item.href} onClick={closeMenu}>
+                  {item.label}
+                </a>
               </li>
             ))}
           </ul>
