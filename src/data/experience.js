@@ -123,6 +123,90 @@ export const experienceEntries = [
       },
     ],
   },
+  {
+    id: "nexsoft",
+    organization: "Nexsoft Solutions",
+    title: "Frontend Development Intern",
+    dates: "June 2026",
+    location: "Virtual",
+    status: "Completed",
+    summary:
+      "Completed a virtual frontend development internship with Nexsoft Solutions, shipping a dedicated internship portfolio alongside a dozen assigned web applications. Exact internship start and end dates are pending confirmation from Fazal Abbas, though every associated repository was created in June 2026.",
+    contributions: [
+      "Built a dedicated internship portfolio plus assigned applications covering a landing page, to-do app, calculator, weather app, notes app, movie search, admin dashboard, expense tracker, e-commerce storefront, task manager, and blog.",
+      "Implemented a real-time chat application with Express, Socket.IO, and Node.js, and a Firebase-backed blog platform with a deployed API.",
+      "Practiced responsive layout, DOM interaction, Chart.js data visualization, and REST/fetch integrations across a wide range of browser-based assignments.",
+      "Published each completed assignment as an independently accessible GitHub repository with a live demonstration.",
+    ],
+    projects: [
+      {
+        name: "Nexsoft Portfolio",
+        githubUrl: "https://github.com/fazal305/nexsoft-portfolio",
+        liveUrl: "https://whimsical-cannoli-515ef2.netlify.app/",
+      },
+      {
+        name: "Nexsoft Chat Application",
+        githubUrl:
+          "https://github.com/fazal305/nexsoft-chat-application-socketio",
+        liveUrl: "https://nexsoft-chat-application-socketio.onrender.com/",
+      },
+      {
+        name: "Nexsoft Blog",
+        githubUrl: "https://github.com/fazal305/nexsoft-blog",
+        liveUrl: "https://fazal305.github.io/nexsoft-blog/",
+      },
+      {
+        name: "Nexsoft Landing Page",
+        githubUrl: "https://github.com/fazal305/nexsoft-landing-page",
+        liveUrl: "https://fazal305.github.io/nexsoft-landing-page/",
+      },
+      {
+        name: "Nexsoft Todo App",
+        githubUrl: "https://github.com/fazal305/nexsoft-todo-app",
+        liveUrl: "https://fazal305.github.io/nexsoft-todo-app/",
+      },
+      {
+        name: "Nexsoft Calculator App",
+        githubUrl: "https://github.com/fazal305/nexsoft-calculator-app",
+        liveUrl: "https://fazal305.github.io/nexsoft-calculator-app/",
+      },
+      {
+        name: "Nexsoft Weather App",
+        githubUrl: "https://github.com/fazal305/nexsoft-weather-app",
+        liveUrl: "https://fazal305.github.io/nexsoft-weather-app/",
+      },
+      {
+        name: "Nexsoft Notes App",
+        githubUrl: "https://github.com/fazal305/nexsoft-notes-app",
+        liveUrl: "https://fazal305.github.io/nexsoft-notes-app/",
+      },
+      {
+        name: "Nexsoft Movie Search",
+        githubUrl: "https://github.com/fazal305/nexsoft-movie-search",
+        liveUrl: "https://fazal305.github.io/nexsoft-movie-search/",
+      },
+      {
+        name: "Nexsoft Admin Dashboard",
+        githubUrl: "https://github.com/fazal305/nexsoft-admin-dashboard",
+        liveUrl: "https://fazal305.github.io/nexsoft-admin-dashboard/",
+      },
+      {
+        name: "Nexsoft Expense Tracker",
+        githubUrl: "https://github.com/fazal305/nexsoft-expense-tracker",
+        liveUrl: "https://fazal305.github.io/nexsoft-expense-tracker/",
+      },
+      {
+        name: "Nexsoft Ecommerce",
+        githubUrl: "https://github.com/fazal305/nexsoft-ecommerce",
+        liveUrl: "https://nexsoft-ecommerce.netlify.app/",
+      },
+      {
+        name: "Nexsoft Task Manager",
+        githubUrl: "https://github.com/fazal305/nexsoft-task-manager",
+        liveUrl: "https://nexsoft-task-manager.netlify.app/",
+      },
+    ],
+  },
 ];
 
 export const educationEntries = [
