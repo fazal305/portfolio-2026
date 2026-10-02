@@ -4,6 +4,8 @@ Production portfolio for Fazal Abbas, a frontend engineer and software engineeri
 
 The site presents selected browser-based products, a complete project archive, verified internship experience, public credentials, engineering notes, and direct contact links in a recruiter-friendly single-page layout.
 
+**Live Demo:** [fazal.is-a.dev](https://fazal.is-a.dev/)
+
 ## Technology
 
 - React 19 and Vite 8
