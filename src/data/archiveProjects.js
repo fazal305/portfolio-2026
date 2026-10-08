@@ -3,23 +3,45 @@ import { projectStacks } from "./projectStacks.js";
 const githubBase = "https://github.com/fazal305";
 const pagesBase = "https://fazal305.github.io";
 
-const project = (
-  slug,
-  name,
-  category,
-  liveUrl = `${pagesBase}/${slug}/`,
-  extra = {},
-) => {
+// Internship projects that now live as subfolders of one repo per internship:
+// slug -> [repo, folder, hasPagesSite]
+const movedProjects = {
+  CodeAlpha_Calculator_App: ["CodeAlpha-Internship", "calculator-app", true],
+  CodeAlpha_ImageGallery: ["CodeAlpha-Internship", "image-gallery", true],
+  CodeAlpha_MusicPlayer: ["CodeAlpha-Internship", "music-player", true],
+  CodeAlpha_Portfolio_Website: ["CodeAlpha-Internship", "portfolio-website", true],
+  HexSoftwares_BookLibrary: ["HexSoftwares-Internship", "book-library", true],
+  HexSoftwares_AnimalCharityWebsite: ["HexSoftwares-Internship", "animal-charity-website", true],
+  HexSoftwares_AnimatingWebsite: ["HexSoftwares-Internship", "animating-website", true],
+  HexSoftwares_CrowdfundingPlatform: ["HexSoftwares-Internship", "crowdfunding-platform", true],
+  HexSoftwares_GymWebsite: ["HexSoftwares-Internship", "gym-website", true],
+  HexSoftwares_Personal_Portfolio: ["HexSoftwares-Internship", "personal-portfolio", true],
+  HexSoftwares_Resume_Website: ["HexSoftwares-Internship", "resume-website", true],
+  HexSoftwares_WebMusicPlayer: ["HexSoftwares-Internship", "web-music-player", true],
+  "hexsoftwares-todo-app": ["HexSoftwares-Internship", "todo-app", true],
+  "decodelabs-responsive-web-layout": ["DecodeLabs-Internship", "responsive-web-layout", false],
+  "decodelabs-interactive-web-elements": ["DecodeLabs-Internship", "interactive-web-elements", false],
+};
+
+const project = (slug, name, category, liveUrl, extra = {}) => {
   const id = slug.toLowerCase();
   const verifiedStack = projectStacks[id];
+  const moved = movedProjects[slug];
+  const defaultLiveUrl = moved
+    ? moved[2]
+      ? `${pagesBase}/${moved[0]}/${moved[1]}/`
+      : null
+    : `${pagesBase}/${slug}/`;
 
   return {
     id,
     name,
     category,
     stack: verifiedStack?.length ? verifiedStack : ["No application source"],
-    githubUrl: `${githubBase}/${slug}`,
-    liveUrl,
+    githubUrl: moved
+      ? `${githubBase}/${moved[0]}/tree/main/${moved[1]}`
+      : `${githubBase}/${slug}`,
+    liveUrl: liveUrl === undefined ? defaultLiveUrl : liveUrl,
     metadataPending: false,
     ...extra,
   };
@@ -258,7 +280,7 @@ export const archiveProjects = [
     "HexSoftwares_CrowdfundingPlatform",
     "HexSoftwares Crowdfunding Platform",
     "Full-stack",
-    `${pagesBase}/HexSoftwares_CrowdfundingPlatform/`,
+    `${pagesBase}/HexSoftwares-Internship/crowdfunding-platform/`,
     {
       apiUrl: "https://hexsoftwares-crowdfundingplatform.onrender.com/",
     },

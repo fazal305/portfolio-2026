@@ -17,52 +17,52 @@ export const experienceEntries = [
       {
         name: "Personal Portfolio",
         githubUrl:
-          "https://github.com/fazal305/HexSoftwares_Personal_Portfolio",
-        liveUrl: "https://fazal305.github.io/HexSoftwares_Personal_Portfolio/",
+          "https://github.com/fazal305/HexSoftwares-Internship/tree/main/personal-portfolio",
+        liveUrl: "https://fazal305.github.io/HexSoftwares-Internship/personal-portfolio/",
       },
       {
         name: "Todo App",
-        githubUrl: "https://github.com/fazal305/hexsoftwares-todo-app",
-        liveUrl: "https://fazal305.github.io/hexsoftwares-todo-app/",
+        githubUrl: "https://github.com/fazal305/HexSoftwares-Internship/tree/main/todo-app",
+        liveUrl: "https://fazal305.github.io/HexSoftwares-Internship/todo-app/",
       },
       {
         name: "Résumé Website",
-        githubUrl: "https://github.com/fazal305/HexSoftwares_Resume_Website",
-        liveUrl: "https://fazal305.github.io/HexSoftwares_Resume_Website/",
+        githubUrl: "https://github.com/fazal305/HexSoftwares-Internship/tree/main/resume-website",
+        liveUrl: "https://fazal305.github.io/HexSoftwares-Internship/resume-website/",
       },
       {
         name: "Web Music Player",
-        githubUrl: "https://github.com/fazal305/HexSoftwares_WebMusicPlayer",
-        liveUrl: "https://fazal305.github.io/HexSoftwares_WebMusicPlayer/",
+        githubUrl: "https://github.com/fazal305/HexSoftwares-Internship/tree/main/web-music-player",
+        liveUrl: "https://fazal305.github.io/HexSoftwares-Internship/web-music-player/",
       },
       {
         name: "Animal Charity Website",
         githubUrl:
-          "https://github.com/fazal305/HexSoftwares_AnimalCharityWebsite",
+          "https://github.com/fazal305/HexSoftwares-Internship/tree/main/animal-charity-website",
         liveUrl:
-          "https://fazal305.github.io/HexSoftwares_AnimalCharityWebsite/",
+          "https://fazal305.github.io/HexSoftwares-Internship/animal-charity-website/",
       },
       {
         name: "Gym Website",
-        githubUrl: "https://github.com/fazal305/HexSoftwares_GymWebsite",
-        liveUrl: "https://fazal305.github.io/HexSoftwares_GymWebsite/",
+        githubUrl: "https://github.com/fazal305/HexSoftwares-Internship/tree/main/gym-website",
+        liveUrl: "https://fazal305.github.io/HexSoftwares-Internship/gym-website/",
       },
       {
         name: "Crowdfunding Platform",
         githubUrl:
-          "https://github.com/fazal305/HexSoftwares_CrowdfundingPlatform",
+          "https://github.com/fazal305/HexSoftwares-Internship/tree/main/crowdfunding-platform",
         liveUrl:
-          "https://fazal305.github.io/HexSoftwares_CrowdfundingPlatform/",
+          "https://fazal305.github.io/HexSoftwares-Internship/crowdfunding-platform/",
       },
       {
         name: "Book Library",
-        githubUrl: "https://github.com/fazal305/HexSoftwares_BookLibrary",
-        liveUrl: "https://fazal305.github.io/HexSoftwares_BookLibrary/",
+        githubUrl: "https://github.com/fazal305/HexSoftwares-Internship/tree/main/book-library",
+        liveUrl: "https://fazal305.github.io/HexSoftwares-Internship/book-library/",
       },
       {
         name: "Animating Website",
-        githubUrl: "https://github.com/fazal305/HexSoftwares_AnimatingWebsite",
-        liveUrl: "https://fazal305.github.io/HexSoftwares_AnimatingWebsite/",
+        githubUrl: "https://github.com/fazal305/HexSoftwares-Internship/tree/main/animating-website",
+        liveUrl: "https://fazal305.github.io/HexSoftwares-Internship/animating-website/",
       },
     ],
     credentials: [
@@ -93,23 +93,23 @@ export const experienceEntries = [
     projects: [
       {
         name: "Music Player",
-        githubUrl: "https://github.com/fazal305/CodeAlpha_MusicPlayer",
-        liveUrl: "https://fazal305.github.io/CodeAlpha_MusicPlayer/",
+        githubUrl: "https://github.com/fazal305/CodeAlpha-Internship/tree/main/music-player",
+        liveUrl: "https://fazal305.github.io/CodeAlpha-Internship/music-player/",
       },
       {
         name: "Image Gallery",
-        githubUrl: "https://github.com/fazal305/CodeAlpha_ImageGallery",
-        liveUrl: "https://fazal305.github.io/CodeAlpha_ImageGallery/",
+        githubUrl: "https://github.com/fazal305/CodeAlpha-Internship/tree/main/image-gallery",
+        liveUrl: "https://fazal305.github.io/CodeAlpha-Internship/image-gallery/",
       },
       {
         name: "Calculator App",
-        githubUrl: "https://github.com/fazal305/CodeAlpha_Calculator_App",
-        liveUrl: "https://fazal305.github.io/CodeAlpha_Calculator_App/",
+        githubUrl: "https://github.com/fazal305/CodeAlpha-Internship/tree/main/calculator-app",
+        liveUrl: "https://fazal305.github.io/CodeAlpha-Internship/calculator-app/",
       },
       {
         name: "Portfolio Website",
-        githubUrl: "https://github.com/fazal305/CodeAlpha_Portfolio_Website",
-        liveUrl: "https://fazal305.github.io/CodeAlpha_Portfolio_Website/",
+        githubUrl: "https://github.com/fazal305/CodeAlpha-Internship/tree/main/portfolio-website",
+        liveUrl: "https://fazal305.github.io/CodeAlpha-Internship/portfolio-website/",
       },
     ],
     credentials: [
