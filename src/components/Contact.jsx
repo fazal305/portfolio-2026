@@ -7,7 +7,7 @@ const contactLinks = [
   {
     label: "LinkedIn",
     value: "Fazal Abbas",
-    href: "https://www.linkedin.com/in/fazal-abbas-4653dg86/",
+    href: "https://www.linkedin.com/in/fazal-abbas879/",
   },
   {
     label: "GitHub",
