@@ -141,7 +141,7 @@ export const experienceEntries = [
     projects: [
       {
         name: "Nexsoft Portfolio",
-        githubUrl: "https://github.com/fazal305/nexsoft-portfolio",
+        githubUrl: null,
         liveUrl: "https://whimsical-cannoli-515ef2.netlify.app/",
       },
       {
@@ -182,8 +182,8 @@ export const experienceEntries = [
       },
       {
         name: "Nexsoft Movie Search",
-        githubUrl: "https://github.com/fazal305/nexsoft-movie-search",
-        liveUrl: "https://fazal305.github.io/nexsoft-movie-search/",
+        githubUrl: "https://github.com/fazal305/cinescope",
+        liveUrl: "https://fazal305.github.io/cinescope/",
       },
       {
         name: "Nexsoft Admin Dashboard",
@@ -192,8 +192,8 @@ export const experienceEntries = [
       },
       {
         name: "Nexsoft Expense Tracker",
-        githubUrl: "https://github.com/fazal305/nexsoft-expense-tracker",
-        liveUrl: "https://fazal305.github.io/nexsoft-expense-tracker/",
+        githubUrl: "https://github.com/fazal305/marginline",
+        liveUrl: "https://fazal305.github.io/marginline/",
       },
       {
         name: "Nexsoft Ecommerce",

@@ -3,45 +3,63 @@ import { projectStacks } from "./projectStacks.js";
 const githubBase = "https://github.com/fazal305";
 const pagesBase = "https://fazal305.github.io";
 
-// Internship projects that now live as subfolders of one repo per internship:
-// slug -> [repo, folder, hasPagesSite]
+// Projects that were merged into a larger repo: a folder of that repo, or one
+// page of a multi-page app.
+const folder = (repo, dir, hasPagesSite = true) => ({
+  githubUrl: `${githubBase}/${repo}/tree/main/${dir}`,
+  liveUrl: hasPagesSite ? `${pagesBase}/${repo}/${dir}/` : null,
+});
+const page = (repo, file) => ({
+  githubUrl: `${githubBase}/${repo}/blob/main/${file}`,
+  liveUrl: `${pagesBase}/${repo}/${file}`,
+});
+
 const movedProjects = {
-  CodeAlpha_Calculator_App: ["CodeAlpha-Internship", "calculator-app", true],
-  CodeAlpha_ImageGallery: ["CodeAlpha-Internship", "image-gallery", true],
-  CodeAlpha_MusicPlayer: ["CodeAlpha-Internship", "music-player", true],
-  CodeAlpha_Portfolio_Website: ["CodeAlpha-Internship", "portfolio-website", true],
-  HexSoftwares_BookLibrary: ["HexSoftwares-Internship", "book-library", true],
-  HexSoftwares_AnimalCharityWebsite: ["HexSoftwares-Internship", "animal-charity-website", true],
-  HexSoftwares_AnimatingWebsite: ["HexSoftwares-Internship", "animating-website", true],
-  HexSoftwares_CrowdfundingPlatform: ["HexSoftwares-Internship", "crowdfunding-platform", true],
-  HexSoftwares_GymWebsite: ["HexSoftwares-Internship", "gym-website", true],
-  HexSoftwares_Personal_Portfolio: ["HexSoftwares-Internship", "personal-portfolio", true],
-  HexSoftwares_Resume_Website: ["HexSoftwares-Internship", "resume-website", true],
-  HexSoftwares_WebMusicPlayer: ["HexSoftwares-Internship", "web-music-player", true],
-  "hexsoftwares-todo-app": ["HexSoftwares-Internship", "todo-app", true],
-  "decodelabs-responsive-web-layout": ["DecodeLabs-Internship", "responsive-web-layout", false],
-  "decodelabs-interactive-web-elements": ["DecodeLabs-Internship", "interactive-web-elements", false],
+  CodeAlpha_Calculator_App: folder("CodeAlpha-Internship", "calculator-app"),
+  CodeAlpha_ImageGallery: folder("CodeAlpha-Internship", "image-gallery"),
+  CodeAlpha_MusicPlayer: folder("CodeAlpha-Internship", "music-player"),
+  CodeAlpha_Portfolio_Website: folder("CodeAlpha-Internship", "portfolio-website"),
+  HexSoftwares_BookLibrary: folder("HexSoftwares-Internship", "book-library"),
+  HexSoftwares_AnimalCharityWebsite: folder("HexSoftwares-Internship", "animal-charity-website"),
+  HexSoftwares_AnimatingWebsite: folder("HexSoftwares-Internship", "animating-website"),
+  HexSoftwares_CrowdfundingPlatform: folder("HexSoftwares-Internship", "crowdfunding-platform"),
+  HexSoftwares_GymWebsite: folder("HexSoftwares-Internship", "gym-website"),
+  HexSoftwares_Personal_Portfolio: folder("HexSoftwares-Internship", "personal-portfolio"),
+  HexSoftwares_Resume_Website: folder("HexSoftwares-Internship", "resume-website"),
+  HexSoftwares_WebMusicPlayer: folder("HexSoftwares-Internship", "web-music-player"),
+  "hexsoftwares-todo-app": folder("HexSoftwares-Internship", "todo-app"),
+  "decodelabs-responsive-web-layout": folder("DecodeLabs-Internship", "responsive-web-layout", false),
+  "decodelabs-interactive-web-elements": folder("DecodeLabs-Internship", "interactive-web-elements", false),
+  "boss-fight-button-masher": folder("retro-arcade-dashboard", "games/boss-fight-button-masher"),
+  "fake-hacker-terminal": folder("retro-arcade-dashboard", "games/fake-hacker-terminal"),
+  "reaction-speed-tester": folder("retro-arcade-dashboard", "games/reaction-speed-tester"),
+  "roast-me-generator": folder("retro-arcade-dashboard", "games/roast-me-generator"),
+  "should-i-do-it": folder("retro-arcade-dashboard", "games/should-i-do-it"),
+  "zombie-survival-choice-game": folder("retro-arcade-dashboard", "games/zombie-survival-choice-game"),
+  "api-response-comparator": page("devkit-studio", "response-comparator.html"),
+  dataforge: page("devkit-studio", "json-xml-converter.html"),
+  "json-schema-builder": page("devkit-studio", "schema-builder.html"),
+  "postman-lite": page("devkit-studio", "api-client.html"),
+  "specforge-api-explorer": page("devkit-studio", "api-viewer.html"),
 };
 
 const project = (slug, name, category, liveUrl, extra = {}) => {
   const id = slug.toLowerCase();
   const verifiedStack = projectStacks[id];
   const moved = movedProjects[slug];
-  const defaultLiveUrl = moved
-    ? moved[2]
-      ? `${pagesBase}/${moved[0]}/${moved[1]}/`
-      : null
-    : `${pagesBase}/${slug}/`;
 
   return {
     id,
     name,
     category,
     stack: verifiedStack?.length ? verifiedStack : ["No application source"],
-    githubUrl: moved
-      ? `${githubBase}/${moved[0]}/tree/main/${moved[1]}`
-      : `${githubBase}/${slug}`,
-    liveUrl: liveUrl === undefined ? defaultLiveUrl : liveUrl,
+    githubUrl: moved ? moved.githubUrl : `${githubBase}/${slug}`,
+    liveUrl:
+      liveUrl === undefined
+        ? moved
+          ? moved.liveUrl
+          : `${pagesBase}/${slug}/`
+        : liveUrl,
     metadataPending: false,
     ...extra,
   };
@@ -116,7 +134,6 @@ export const archiveProjects = [
     "Automation",
     null,
   ),
-  project("FazalAbbas305", "FazalAbbas305", "GitHub profile", null),
   project("should-i-do-it", "Should I Do It?", "Interactive experiments"),
   project(
     "roast-me-generator",
@@ -164,13 +181,19 @@ export const archiveProjects = [
     "Portfolio Website",
     "Portfolio",
     "https://fazal-abbas-portfolio.web.app/",
+    { githubUrl: null },
   ),
   project(
     "firebase-project-suite",
     "Firebase Project Suite",
     "Web applications",
   ),
-  project("decodelabs-static-agency", "DecodeLabs Static Agency", "Frontend"),
+  project(
+    "agency-os",
+    "Agency OS",
+    "Business applications",
+    "https://agency-os-two-ashen.vercel.app/",
+  ),
   project("nightcity-os", "NIGHTCITY OS", "Browser simulation", undefined, {
     isFlagship: true,
   }),
@@ -230,19 +253,20 @@ export const archiveProjects = [
     "NexSoft Portfolio",
     "Portfolio",
     "https://whimsical-cannoli-515ef2.netlify.app/",
+    { githubUrl: null },
   ),
   project("nexsoft-landing-page", "NexSoft Landing Page", "Frontend"),
   project("nexsoft-todo-app", "NexSoft Todo App", "Productivity"),
   project("nexsoft-calculator-app", "NexSoft Calculator App", "Utilities"),
   project("nexsoft-weather-app", "NexSoft Weather App", "Web applications"),
   project("nexsoft-notes-app", "NexSoft Notes App", "Productivity"),
-  project("nexsoft-movie-search", "NexSoft Movie Search", "Web applications"),
+  project("cinescope", "CineScope", "Web applications"),
   project(
     "nexsoft-admin-dashboard",
     "NexSoft Admin Dashboard",
     "Business applications",
   ),
-  project("nexsoft-expense-tracker", "NexSoft Expense Tracker", "Finance"),
+  project("marginline", "Marginline", "Finance"),
   project(
     "nexsoft-ecommerce",
     "NexSoft Ecommerce",

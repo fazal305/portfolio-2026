@@ -41,7 +41,7 @@ function InternshipProjects({ projects, organization }) {
 
       <ul aria-label={`${organization} internship projects`}>
         {projects.map((project) => (
-          <li key={project.githubUrl}>
+          <li key={project.name}>
             <span>{project.name}</span>
 
             <div>
@@ -51,9 +51,11 @@ function InternshipProjects({ projects, organization }) {
                 </a>
               )}
 
-              <a href={project.githubUrl} target="_blank" rel="noreferrer">
-                GitHub <span aria-hidden="true">↗</span>
-              </a>
+              {project.githubUrl && (
+                <a href={project.githubUrl} target="_blank" rel="noreferrer">
+                  GitHub <span aria-hidden="true">↗</span>
+                </a>
+              )}
             </div>
           </li>
         ))}

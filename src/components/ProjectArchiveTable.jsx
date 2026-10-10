@@ -69,14 +69,16 @@ function ProjectArchiveTable() {
                       </a>
                     )}
 
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label={`Open ${project.name} GitHub repository`}
-                    >
-                      GitHub <span aria-hidden="true">↗</span>
-                    </a>
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`Open ${project.name} GitHub repository`}
+                      >
+                        GitHub <span aria-hidden="true">↗</span>
+                      </a>
+                    )}
                   </div>
                 </td>
               </tr>

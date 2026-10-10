@@ -7,36 +7,8 @@ const screenshot = (filename, alt) => ({
 
 export const projects = [
   {
-    id: "fazal-labs",
-    index: "01",
-    name: "Fazal Labs",
-    description:
-      "A browser-based software portfolio ecosystem that organizes standalone projects into shared product suites, architecture documentation, design standards, roadmaps, changelogs, and deployment links.",
-    role: "Sole designer and developer",
-    stack: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "CSS Custom Properties",
-      "LocalStorage",
-      "Blob API",
-    ],
-    challenge:
-      "Organizing many independent repositories into one coherent ecosystem while keeping product, suite, roadmap, theme, and changelog data consistent across multiple pages.",
-    solution:
-      "Built a configuration-driven, local-first workspace that generates product views, suite pages, ecosystem relationships, and editable planning data from shared browser state.",
-    githubUrl: "https://github.com/fazal305/fazal-labs",
-    liveUrl: "https://fazal305.github.io/fazal-labs/",
-    caseStudyUrl: null,
-    caseStudyPending: true,
-    screenshot: screenshot(
-      "fazal-labs-preview.png",
-      "Fazal Labs ecosystem dashboard showing its navigation, introduction, and portfolio statistics",
-    ),
-  },
-  {
     id: "database-engineering-studio",
-    index: "02",
+    index: "01",
     name: "Database Engineering Studio",
     description:
       "A browser-based database engineering workspace for visually designing schemas, executing a defined SQL subset, exploring joins, generating queries, and learning normalization through connected tools.",
@@ -67,7 +39,7 @@ export const projects = [
   },
   {
     id: "nightcity-os",
-    index: "03",
+    index: "02",
     name: "NIGHTCITY OS",
     description:
       "A modular browser-based desktop simulation featuring draggable application windows, taskbar behavior, notifications, persistent notes, weather data, Canvas visuals, themes, and responsive desktop interactions.",
@@ -95,7 +67,7 @@ export const projects = [
   },
   {
     id: "civicconnect",
-    index: "04",
+    index: "03",
     name: "CivicConnect",
     description:
       "A multilingual civic issue reporting application for creating and managing municipal complaints involving waste collection, utilities, water supply, gas supply, and road damage.",
@@ -127,7 +99,7 @@ export const projects = [
   },
   {
     id: "devkit-studio",
-    index: "05",
+    index: "04",
     name: "DevKit Studio",
     description:
       "A local-first developer toolkit combining JSON, XML, RSS, API testing, response comparison, schema generation, request collections, environments, and mock response workflows.",
@@ -160,7 +132,7 @@ export const projects = [
   },
   {
     id: "fazal-framework",
-    index: "06",
+    index: "05",
     name: "Fazal Framework",
     description:
       "A small dependency-free frontend framework implementing routing, stateful components, observable stores, event buses, runtime theming, and plugins, accompanied by a working documentation site.",
