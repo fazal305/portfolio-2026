@@ -225,9 +225,10 @@ export const educationEntries = [
   {
     id: "aptech",
     institution: "Aptech",
-    program: "Program name pending confirmation",
-    details: "Software engineering education details require confirmation.",
-    isPlaceholder: true,
+    program: "Advanced Diploma in Software Engineering (ADSE)",
+    details:
+      "Career program covering full-stack web development, enterprise applications, and modern software engineering.",
+    isPlaceholder: false,
   },
   {
     id: "beaconhouse",
