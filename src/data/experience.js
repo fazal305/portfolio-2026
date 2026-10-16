@@ -211,6 +211,18 @@ export const experienceEntries = [
 
 export const educationEntries = [
   {
+    id: "hubspot-digital-marketing",
+    kind: "Certification",
+    institution: "HubSpot Academy",
+    program: "Digital Marketing Certified",
+    details: "Issued October 2026 · Valid through November 2028",
+    credential: {
+      label: "View certificate",
+      url: "/credentials/hubspot-digital-marketing-certificate.png",
+    },
+    isPlaceholder: false,
+  },
+  {
     id: "aptech",
     institution: "Aptech",
     program: "Program name pending confirmation",

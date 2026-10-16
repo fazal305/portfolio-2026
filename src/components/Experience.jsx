@@ -112,7 +112,7 @@ function EducationEntry({ entry }) {
       }`}
     >
       <div>
-        <p className="mono-label">Education</p>
+        <p className="mono-label">{entry.kind ?? "Education"}</p>
         <h3>{entry.institution}</h3>
       </div>
 
@@ -121,6 +121,24 @@ function EducationEntry({ entry }) {
 
         {entry.details && (
           <p className="education-entry__details">{entry.details}</p>
+        )}
+
+        {entry.credential && (
+          <ul
+            className="experience-entry__credentials"
+            aria-label={`${entry.institution} credential`}
+          >
+            <li>
+              <a
+                href={`${import.meta.env.BASE_URL}${entry.credential.url.replace(/^\//, "")}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {entry.credential.label}
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
         )}
 
         {entry.isPlaceholder && (
@@ -153,7 +171,7 @@ function Experience() {
 
             <p>
               Verified virtual internships supported by public completion
-              credentials, followed by current education.
+              credentials, followed by certifications and current education.
             </p>
           </div>
         </header>
