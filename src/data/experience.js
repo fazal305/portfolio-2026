@@ -223,6 +223,14 @@ export const educationEntries = [
     isPlaceholder: false,
   },
   {
+    id: "meta-intro-front-end",
+    kind: "Course",
+    institution: "Meta (Coursera)",
+    program: "Introduction to Front-End Development",
+    details: "In progress · Started October 2026 · First course of the Meta Front-End Developer Professional Certificate",
+    isPlaceholder: false,
+  },
+  {
     id: "aptech",
     institution: "Aptech",
     program: "Advanced Diploma in Software Engineering (ADSE)",
