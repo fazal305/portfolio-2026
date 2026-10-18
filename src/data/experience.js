@@ -223,6 +223,14 @@ export const educationEntries = [
     isPlaceholder: false,
   },
   {
+    id: "openai-ai-foundations",
+    kind: "Certification",
+    institution: "OpenAI Academy",
+    program: "AI Foundations Assessment",
+    details: "Completed October 2026 · AI Foundations learning path",
+    isPlaceholder: false,
+  },
+  {
     id: "meta-intro-front-end",
     kind: "Course",
     institution: "Meta (Coursera)",
