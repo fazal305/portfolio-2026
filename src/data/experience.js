@@ -231,6 +231,18 @@ export const educationEntries = [
     isPlaceholder: false,
   },
   {
+    id: "canva-work-smarter-with-ai",
+    kind: "Certification",
+    institution: "Canva",
+    program: "Work Smarter with AI",
+    details: "Issued October 2026 · Credential ID 2d7ff5",
+    credential: {
+      label: "View credential",
+      url: "https://canva.com/design-school/certification-award/2d7ff518-7415-49d8-936d-08043a68353b",
+    },
+    isPlaceholder: false,
+  },
+  {
     id: "meta-intro-front-end",
     kind: "Course",
     institution: "Meta (Coursera)",

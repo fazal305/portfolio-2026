@@ -130,7 +130,11 @@ function EducationEntry({ entry }) {
           >
             <li>
               <a
-                href={`${import.meta.env.BASE_URL}${entry.credential.url.replace(/^\//, "")}`}
+                href={
+                  entry.credential.url.startsWith("http")
+                    ? entry.credential.url
+                    : `${import.meta.env.BASE_URL}${entry.credential.url.replace(/^\//, "")}`
+                }
                 target="_blank"
                 rel="noreferrer"
               >
