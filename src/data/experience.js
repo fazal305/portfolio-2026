@@ -243,6 +243,30 @@ export const educationEntries = [
     isPlaceholder: false,
   },
   {
+    id: "claude-academy-claude-101",
+    kind: "Certification",
+    institution: "Claude Academy",
+    program: "Claude 101",
+    details: "Issued October 2026",
+    credential: {
+      label: "Verify badge",
+      url: "https://academy.claude.com/verify/19ca85a0339fe51ac3742d4f357ec6d6",
+    },
+    isPlaceholder: false,
+  },
+  {
+    id: "claude-academy-ai-fluency",
+    kind: "Certification",
+    institution: "Claude Academy",
+    program: "AI Fluency: Framework and Foundations",
+    details: "Issued October 2026",
+    credential: {
+      label: "Verify badge",
+      url: "https://academy.claude.com/verify/aa10ab1add6ff0c1c9c31f74cf521a94",
+    },
+    isPlaceholder: false,
+  },
+  {
     id: "meta-intro-front-end",
     kind: "Course",
     institution: "Meta (Coursera)",
